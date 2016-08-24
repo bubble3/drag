@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html ng-app="myApp">
+<head>
+<meta charset="utf-8">
+<title>列的嵌套</title>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="animate.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<style type="text/css">
+.gold {
+    width: 87px;
+    height: 87px;
+    display: block;
+    background:red url('gold.png') no-repeat;
+  }
+#euro {
+    width: 150px;
+    height: 150px;
+    margin-left: -75px;
+    margin-top: -75px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-style: preserve-3d;
+    animation: spin 2.5s linear infinite;
+}
+.back {
+    background-image: url("gold_02.png");
+    width: 150px;
+    height: 150px;
+}
+.middle {
+    background-image: url("gold_02.png");
+    width: 150px;
+    height: 150px;
+    transform: translateZ(1px);
+    position: absolute;
+    top: 0;
+}
+.front {
+    background-image: url("gold_02.png");
+    height: 150px;
+    position: absolute;
+    top: 0;
+    transform: translateZ(10px);
+    width: 150px;
+}
+@keyframes spin {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+</style>
+</head>
+
+<body>
+   <span class="gold animated"></span>
+   
+</body>
+<script type="text/javascript">
+
+</script>
+</html>
